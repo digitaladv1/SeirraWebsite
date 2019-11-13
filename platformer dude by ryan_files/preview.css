@@ -1,0 +1,38 @@
+﻿
+/* remove padding, margin and any touch action or delay */
+html, body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+	background: black;		/* overridden by JS in preview mode */
+	color: white;
+}
+
+input, button, select {
+	padding: 0;
+	margin: 0;
+}
+
+html, body, canvas {
+	touch-action-delay: none;
+	touch-action: none;
+}
+
+/* debugger inspect element */
+#inspect-outline {
+	position: absolute;
+	border: 2px dotted red;
+	overflow: hidden;
+	font-size: 8pt;
+	font-family: Sans serif;
+	color: #444;
+	pointer-events: none;
+	animation: flash 2s linear 0s infinite;
+	background-image: url("../debugger/inspect.png");
+}
+
+@keyframes flash {
+	0%, 75%, 100% {opacity: 1;}
+	87% {opacity: 0.25;}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Magic Telling</title>
+  </head>
+  <body>
+    <h1>You Will Eat... <span id="eat">  </span> </h1>
+    <h1>You Will Live For... <span id="lives">  </span> </h1>
+    <h1>You Will Be ... <span id="be">  </span> </h1>
+    <h1>You Will Work At ... <span id="worker">  </span> </h1>
+
+<script type="text/javascript">
+var eats = [" Cereal For Breakfast", " Cheese For Lunch", " Brisket For Dinner "];
+var eat = eats[Math.floor(Math.random()*eats.length)];
+document.getElementById('eat').innerHTML = eat;
+
+var lives = ["9 More Years", " 47 More Years ", "23 More Years "];
+var live = lives[Math.floor(Math.random()*lives.length)];
+document.getElementById('lives').innerHTML = live;
+
+var bes = ["Busy", " Tired ", "Stupid ", "Cool", "Weird", "Smart", "Married", "Single"         ];
+var be = bes[Math.floor(Math.random()*bes.length)];
+document.getElementById('be').innerHTML = be;
+
+var workers = ["NASA", " Subway", "Best Buy", "Target", "Dominos", "Forever 21", "The Mall", "Wallgreens"         ];
+var worker = workers[Math.floor(Math.random()*workers.length)];
+document.getElementById('worker').innerHTML = worker;
+
+
+
+
+
+
+</script>
+
+
+  </body>
+</html>

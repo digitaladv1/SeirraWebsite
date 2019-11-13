@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title> Rock Paper Scissors</title>
+   </head>
+   <body>
+<h1> !!!This is Rock Paper Scissors!!!</h1>
+<img src="Friends.gif" alt="">
+
+
+<script type="text/javascript">
+var userChoice = prompt(" Choose Rock, Paper or Scissors");
+document.write("<p>Player1: "+ userChoice   + "</p>");
+
+
+var cpuChoicelist = ["Paper","Rock","Scissors" ];
+var cpuChoice = cpuChoicelist[Math.floor(Math.random()*cpuChoicelist.length)];
+
+document.write("<p> computer: "+ cpuChoice   + "</p>");
+
+var done = function(pp,cc){
+  p=pp.toLowerCase();
+  c=cc.toLowerCase();
+   if (c==p) {
+     return "It's a tie";
+   }
+   if (p=="rock") {
+     if (c=="scissors"){
+       return "You Win";
+      }
+     }
+     if (p=="rock") {
+       if (c=="paper"){
+         return "You Lose";
+        }
+       }
+
+       if (p=="scissors") {
+         if (c=="paper"){
+           return "You Win";
+          }
+         }
+         if (p=="scissors") {
+           if (c=="rock"){
+             return "You Lose";
+            }
+           }
+           if (p=="paper") {
+             if (c=="rock"){
+               return "You Win";
+              }
+             }
+             if (p=="paper") {
+               if (c=="scissors"){
+                 return "You Lose";
+                }
+               }
+
+   }
+
+
+   var result=done(userChoice,cpuChoice);
+
+   document.write(result);
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+   </body>
+ </html
